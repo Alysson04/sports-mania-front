@@ -1,0 +1,154 @@
+/* styles.css */
+
+/* Estilos gerais para o conteúdo */
+.content {
+    padding: 20px;
+  }
+  
+  /* Estilos para o título e breadcrumbs */
+  .content-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: #FFD700;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb-link {
+    color: #FFD700;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para a barra de ferramentas */
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-btn, .add-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #000000;
+  }
+  
+  /* Botão Filtrar */
+  .filter-btn {
+    background-color: transparent;
+    color: #000;
+  }
+  
+  .filter-btn:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Botão Adicionar Produto */
+  .add-btn {
+    background-color: #FFD700;
+    color: #000;
+  }
+  
+  .add-btn:hover {
+    background-color: #e6c200;
+  }
+  
+  /* Estilos para a tabela */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #000000; /* Mantém a linha separadora */
+    background-color: transparent; /* Remove o fundo */
+  }
+  
+  .table th {
+    font-weight: bold;
+  }
+  
+  .table tr:hover {
+    background-color: #ffffff; /* Destaque ao passar o mouse sobre a linha */
+  }
+  
+  .table th, .table td {
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Estilo da imagem do produto */
+  .product-image {
+    width: 50px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 5px; /* Arredondar os cantos, se desejado */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Garante que as bordas não se sobreponham */
+  }
+
+  th, td {
+    border: 2px solid black; /* Adiciona bordas a cada célula */
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  th {
+    background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
+  }
+
+  /* Opcional: Limitar o tamanho para formar um quadrado visual */
+  .square-table {
+    width: 300px; /* Define largura */
+    height: 300px; /* Define altura */
+    table-layout: fixed; /* Força o ajuste das células ao tamanho da tabela */
+  }
+  /* Container do Formulário */
+.form-cadastro {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1840px;
+    margin: 5px auto;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Título do Formulário */
+  .form-cadastro h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo dos Inputs */
+  .form-cadastro input[type="text"],
+  .form-cadastro input[type="number"] {
+    width: 100%;
+    pa
+  

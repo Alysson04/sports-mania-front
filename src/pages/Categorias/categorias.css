@@ -1,0 +1,80 @@
+/* Container principal */
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Cabeçalho da tabela */
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  /* Botões no cabeçalho */
+  .actions button {
+    padding: 8px 12px;
+    margin-left: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .filter-button {
+    background-color: #f0f0f0;
+  }
+  
+  .add-button {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  /* Área de rolagem */
+  .table-scroll {
+    max-height: 300px; /* Altura máxima para ativar a rolagem */
+    overflow-y: auto;
+  }
+  
+  /* Estilo da tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table td {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  /* Estilo da barra de rolagem */
+  .table-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .table-scroll::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .table-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+  

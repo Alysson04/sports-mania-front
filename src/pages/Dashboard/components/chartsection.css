@@ -1,0 +1,23 @@
+.charts {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chart {
+    flex: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  canvas {
+    max-width: 100%;
+  }
+  

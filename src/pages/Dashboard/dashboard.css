@@ -1,0 +1,27 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body1 {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Dashboard */
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Cards */
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  

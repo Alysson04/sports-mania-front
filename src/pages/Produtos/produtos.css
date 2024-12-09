@@ -1,6 +1,8 @@
 /* styles.css */
 
 /* Estilos gerais para o conteúdo */
+
+
 .content {
     padding: 20px;
   }
@@ -82,12 +84,12 @@
   .table th, .table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 2px solid #000000; /* Mantém a linha separadora */
+    border-bottom: 0px solid #ffffff; /* Mantém a linha separadora */
     background-color: transparent; /* Remove o fundo */
   }
   
   .table th {
-    font-weight: bold;
+    font-weight:bold;
   }
   
   .table tr:hover {
@@ -111,7 +113,7 @@
   }
 
   th, td {
-    border: 2px solid black; /* Adiciona bordas a cada célula */
+    border: 0px solid rgb(255, 255, 255); /* Adiciona bordas a cada célula */
     padding: 10px; /* Espaçamento interno das células */
     text-align: center; /* Centraliza o conteúdo */
   }

@@ -31,9 +31,6 @@ const Sidebar = ({ active }) => {
       <Link to="/produtos">
         <SidebarItem Icon={BsBoxSeam} Text="Produtos" />
       </Link>
-      <Link to="/categorias">
-        <SidebarItem Icon={BsBoxes} Text="Categorias" />
-      </Link>
       <Link to="/fornecedores">
         <SidebarItem Icon={TbTruckDelivery} Text="Fornecedores" />
       </Link>
@@ -41,7 +38,7 @@ const Sidebar = ({ active }) => {
         <SidebarItem Icon={FaArrowRight} Text="Entradas" />
       </Link>
       <Link to="/saidas">
-        <SidebarItem Icon={FaArrowLeft} Text="Saídas" />
+        <SidebarItem Icon={FaArrowLeft} Text="Vendas" />
       </Link>
       <Link to="/clientes">
         <SidebarItem Icon={FaUsers} Text="Clientes" />

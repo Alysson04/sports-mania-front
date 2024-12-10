@@ -22,7 +22,7 @@ function ProdutosTable() {
       <div className="divProdutos">
         <h2 className="content-title">
           <FaArrowLeft style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-          Saidas
+          Vendas
         </h2>
       </div>
 
@@ -44,15 +44,11 @@ function ProdutosTable() {
           <tbody>
             {Produtos.map((produto) => (
               <tr key={produto.notafiscal}>
-             
-
                 <td>{produto.produto}</td>
+                <td>{produto.notafiscal}</td>
                 <td>{produto.datadavenda}</td>
+                <td>R${produto.preço}</td>
                 <td>R$ {produto.desconto}</td>
-                <td>{produto.preço}</td>
-                <td>R$ {produto.desconto}</td>
-          
-              
               </tr>
             ))}
           </tbody>

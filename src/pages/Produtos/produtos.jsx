@@ -11,7 +11,7 @@ const Produtos = [
     id: 1,
     nome: 'Tênis Esportivo',
     categoria: 'Calçados',
-    estoque: 30,
+    quantidade: 30,
     preço: 150.0,
     venda: 250.0,
     lucro: '66.67%',
@@ -21,7 +21,7 @@ const Produtos = [
     id: 2,
     nome: 'Camiseta Esportiva',
     categoria: 'Vestuário',
-    estoque: 80,
+    quantidade: 80,
     preço: 30.0,
     venda: 60.0,
     lucro: '100%',
@@ -30,6 +30,7 @@ const Produtos = [
 ];
 
 function ProdutosPage() {
+
   const [showCadastro, setShowCadastro] = useState(false);
   const [searchQuery, setSearchQuery] = useState(''); // Estado para a pesquisa
   const [filterCategory, setFilterCategory] = useState(''); // Estado para o filtro por categoria
@@ -64,16 +65,10 @@ function ProdutosPage() {
 
   const renderForm = () => (
     <div style={styles.formContainer}>
-      <h2 style={styles.formTitle}>Dados do novo produto</h2>
+      <h3 style={styles.formTitle}>Dados do novo produto</h3>
       <form style={styles.form}>
         {/* Linha 1 */}
         <div style={styles.row}>
-          <div style={styles.inputGroup}>
-            <label htmlFor="referencia" style={styles.label}>
-              Referência <span style={styles.required}>*</span>
-            </label>
-            <input id="referencia" type="text" style={styles.input} />
-          </div>
           <div style={styles.inputGroup}>
             <label htmlFor="nome" style={styles.label}>
               Nome <span style={styles.required}>*</span>
@@ -90,12 +85,7 @@ function ProdutosPage() {
 
         {/* Linha 2 */}
         <div style={styles.row}>
-          <div style={styles.inputGroupWide}>
-            <label htmlFor="descricao" style={styles.label}>
-              Descrição <span style={styles.required}>*</span>
-            </label>
-            <textarea id="descricao" style={styles.textarea}></textarea>
-          </div>
+    
         </div>
 
         {/* Linha 3 */}
@@ -106,31 +96,26 @@ function ProdutosPage() {
             </label>
             <select id="categoria" style={styles.input}>
               <option>Selecione</option>
+              
             </select>
           </div>
           <div style={styles.inputGroup}>
             <label htmlFor="unidade" style={styles.label}>
-              Unidade <span style={styles.required}>*</span>
+              Quantidade <span style={styles.required}>*</span>
             </label>
-            <select id="unidade" style={styles.input}>
-              <option>Selecione</option>
-            </select>
+            <input id="unidade" type="number" style={styles.input}>
+            </input>
           </div>
         </div>
 
         {/* Linha 4 */}
         <div style={styles.row}>
-          <div style={styles.inputGroup}>
-            <label htmlFor="estoqueMinimo" style={styles.label}>
-              Estoque Mínimo <span style={styles.required}>*</span>
-            </label>
-            <input id="estoqueMinimo" type="number" style={styles.input} />
-          </div>
+        
           <div style={styles.inputGroup}>
             <label htmlFor="precoVenda" style={styles.label}>
-              Preço Venda <span style={styles.required}>*</span>
+              Preço <span style={styles.required}>*</span>
             </label>
-            <input id="precoVenda" type="text" style={styles.input} />
+            <input id="precoVenda" type="number" style={styles.input} />
           </div>
         </div>
 
@@ -199,10 +184,10 @@ function ProdutosPage() {
               <th>ID</th>
               <th>Nome</th>
               <th>Categoria</th>
-              <th>Estoque</th>
+              <th>Quantidade</th>
               <th>Preço</th>
-              <th>Venda</th>
-              <th>Lucro (%)</th>
+          
+           
             </tr>
           </thead>
           <tbody >
@@ -218,10 +203,9 @@ function ProdutosPage() {
                 <td>{produto.id}</td>
                 <td>{produto.nome}</td>
                 <td>{produto.categoria}</td>
-                <td>{produto.estoque}</td>
+                <td>{produto.quantidade}</td>
                 <td>R$ {produto.preço.toFixed(2)}</td>
-                <td>R$ {produto.venda.toFixed(2)}</td>
-                <td>{produto.lucro}</td>
+               
               </tr>
             ))}
           </tbody>

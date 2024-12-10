@@ -14,6 +14,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { LuFileBox } from "react-icons/lu";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 import SidebarItem from '../SidebarItem'
 
@@ -32,7 +33,7 @@ const Sidebar = ({ active }) => {
         <SidebarItem Icon={BsBoxSeam} Text="Produtos" />
       </Link>
       <Link to="/fornecedores">
-        <SidebarItem Icon={TbTruckDelivery} Text="Fornecedores" />
+        <SidebarItem Icon={BsPersonWorkspace} Text="Funcionários" />
       </Link>
       <Link to="/entradas">
         <SidebarItem Icon={FaArrowRight} Text="Entradas" />

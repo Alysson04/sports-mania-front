@@ -1,0 +1,37 @@
+.img1 {
+    height: 10vh; /* Altura proporcional à altura da tela */
+    margin-left: auto; /* Centraliza ou ajusta o posicionamento */
+    margin-right: auto;
+    display: block; /* Garante centralização ao usar `margin: auto` */
+    max-width: 100%; /* Impede que a imagem ultrapasse os limites do contêiner */
+}
+
+h2 {
+    font-size: 3rem; /* Usa unidades relativas para escalabilidade */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    color: aliceblue;
+}
+
+.sistemaEstoque {
+    display: grid; /* Melhora o layout para centralização */
+    place-items: center; /* Centraliza conteúdo no centro do grid */
+    text-align: center; /* Centraliza texto, se aplicável */
+}
+
+/* Responsividade com media queries */
+@media screen and (max-width: 768px) {
+    .img1 {
+        height: 8vh; /* Reduz a altura da imagem em telas menores */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        font-size: 2rem; /* Ajusta o tamanho do texto para telas menores */
+    }
+
+    .sistemaEstoque {
+        padding: 10px;
+    }
+}

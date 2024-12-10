@@ -5,7 +5,7 @@ export const Container = styled.div`
 
 
   display: ;
-  background-color: #1A202C; 
+  background-color: #171717; 
   
   
 
